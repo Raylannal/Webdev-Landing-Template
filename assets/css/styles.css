@@ -23,6 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: var(--primaryColor);
+  line-height: 1.5;
 }
 
 h1,
@@ -86,6 +87,7 @@ h6 {
   left: 0;
   right: 0;
   border-bottom: 0.1px solid var(--lightGrayColor);
+  z-index: 1;
 }
 
 .menuContent {
@@ -130,4 +132,33 @@ h6 {
 .menu ul li a:hover::after {
   width: 50%;
   left: 25%;
+}
+
+.menuSpacing {
+  height: 65px;
+}
+
+.introContent {
+  position: relative;
+  top: -8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+}
+.introTextContent, .introImg {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.introTextContent h2 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.introImg img {
+  max-width: 100%;
+  height: auto;
 }
