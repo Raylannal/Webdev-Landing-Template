@@ -1,5 +1,6 @@
 :root {
   --primaryColor: #520303;
+  --tertiaryColor: #812626;
   --whiteColor: #ffffff;
   --gap: 3rem;
   --lightGrayColor: #eeeeee;
@@ -17,6 +18,30 @@ a {
 
 p {
   margin-bottom: 3rem;
+}
+
+table {
+  min-width: 36rem;
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--tertiaryColor);
+}
+
+tfoot td, table th {
+  background: var(--tertiaryColor);
 }
 
 html {
@@ -172,7 +197,6 @@ h6 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  height: 100vh;
   text-align: center;
 }
 .gridOneContent {
@@ -228,4 +252,9 @@ h6 {
 
 .galleryImg img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsiveTable {
+  overflow: hidden;
+  overflow-x: auto;
 }
