@@ -200,6 +200,7 @@ h6 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  min-height: 100vh;
   text-align: center;
 }
 .gridOneContent {
@@ -329,4 +330,18 @@ body .fullWidth {
 .footer p {
   margin: 0;
   padding: 3rem;
+}
+
+@media (max-width: 800px) {
+  .introContent, .grid {
+    grid-template-columns: 1fr;
+  }
+  .galleryImg {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .galleryImg img{
+    width: 100%;
+  }
 }
