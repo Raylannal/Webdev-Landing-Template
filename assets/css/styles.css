@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -22,7 +23,7 @@ p {
 
 table {
   min-width: 36rem;
-  width: 100%; 
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -33,14 +34,16 @@ table caption {
   margin-bottom: 1rem;
 }
 
-table td, table th {
+table td,
+table th {
   white-space: nowrap;
   padding: 1rem;
   text-align: left;
   border: 0.1rem solid var(--tertiaryColor);
 }
 
-tfoot td, table th {
+tfoot td,
+table th {
   background: var(--tertiaryColor);
 }
 
@@ -174,7 +177,7 @@ h6 {
 
 .introContent {
   position: relative;
-  top: -8rem;
+
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
@@ -257,4 +260,73 @@ h6 {
 .responsiveTable {
   overflow: hidden;
   overflow-x: auto;
+}
+
+.contactForm {
+  grid-column: span 2;
+}
+
+.contactForm .formGrid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.formGrid legend {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  flex: 1 1 32rem;
+
+}
+
+.formGroup label{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.formGroup input,
+.formGroup textarea{
+  border: 0.2rem solid var(--primaryColor);
+  background: var(--lightGrayColor);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+body .fullWidth {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.formGroup button {
+  border: 0.4rem solid var(--primaryColor);
+  background: none;
+  color: var(--primaryColor);
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.formGroup button:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.footer p {
+  margin: 0;
+  padding: 3rem;
 }

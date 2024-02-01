@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mainBg">
+  <body>
     <aside class="menu whiteBg">
       <div class="mainContent menuContent">
         <h1>
@@ -200,7 +200,7 @@
       </div>
     </section>
 
-    <section id="intro" class="intro whiteBg section">
+    <section id="contact" class="intro whiteBg section">
       <div class="mainContent introContent">
         <div class="introTextContent">
           <h2>January brings us Firefox 85</h2>
@@ -214,7 +214,40 @@
         <div class="introImg">
           <img src="assets/img/javaScript.svg" alt="" />
         </div>
+        <div class="contactForm">
+          <fieldset class="formGrid">
+            <legend>Contact me</legend>
+
+            <div class="formGroup">
+              <label for="firstName">First name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="Your name"/>
+            </div>
+
+            <div class="formGroup">
+              <label for="lastName">Last name</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Your last name"/>
+            </div>
+
+            <div class="formGroup">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Your e-mail"/>
+            </div>
+
+            <div class="formGroup fullWidth">
+              <label for="message">Message</label>
+              <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="formGroup fullWidth">
+              <button type="submit">Send message</button>
+            </div>
+          </fieldset>
+        </div>
       </div>
     </section>
+
+    <footer id="footer" class="footer mainBg">
+      <p>Feito com ❤ por Lara Araújo</p>
+    </footer>
   </body>
 </html>
